@@ -1,8 +1,7 @@
 package episode_08;
 
+import java.time.Duration;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +20,7 @@ public class WindowsWithLetCodePage {
 		System.out.println("Info : --> : URL has been launched successfully");
 
 		//Wait time 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		String parentWindow = driver.getWindowHandle();
 
