@@ -18,6 +18,10 @@ public class InteractInputWithLetCodePage {
 		driver.get(URL);
 		System.out.println("Info : --> : URL has been launched successfully");
 
+		//How to maximize the window
+		driver.manage().window().maximize();
+		System.out.println("Info : --> : The window has been maximized successfully");
+
 		//Enter your full Name
 		WebElement enterYourFullNameTextBox = driver.findElement(By.cssSelector("#fullName"));
 		enterYourFullNameTextBox.sendKeys("Kumar Pantaa");
