@@ -39,7 +39,7 @@ public class LaunchBrowser {
 		
 		//How to close the current window
 		driver.close();
-		System.out.println("Info : --> : The Window has been closed successfully");
+		System.out.println("Info : --> : The Window has been closed successfully"); 
 
 	}
 
